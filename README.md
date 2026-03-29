@@ -11,12 +11,11 @@ The framework provides a browser widget that displays the given properties with 
 ### 2.1
 
 - `QtTreePropertyBrowser` - tooltip of property applied to first column, while second column shows the value text of property in its tooltip
-
-   - `QtAbstractPropertyManager` - `initializeProperty()` and `uninitializeProperty()` without const modifier now
-   - `QtTreePropertyBrowser` and `QtGroupBoxPropertyBrowser` - internal argin set to 0
-   - `QtProperty` - `setEnabled()` and `isEnabled()` methods added
-   - `QtTreePropertyBrowser` - "rootIsDecorated", "indentation" and "headerVisible" properties added
-   - `QtProperty` - `hasValue()` method added, useful for group roperties
+- `QtAbstractPropertyManager` - `initializeProperty()` and `uninitializeProperty()` without const modifier now
+- `QtTreePropertyBrowser` and `QtGroupBoxPropertyBrowser` - internal argin set to 0
+- `QtProperty` - `setEnabled()` and `isEnabled()` methods added
+- `QtTreePropertyBrowser` - "rootIsDecorated", "indentation" and "headerVisible" properties added
+- `QtProperty` - `hasValue()` method added, useful for group roperties
 
 ### 2.2
 
@@ -62,11 +61,10 @@ The framework provides a browser widget that displays the given properties with 
 ### 2.6
 
 - `QtGroupPropertyBrowser` - don't force the layout to show the whole labels' contents for read only properties, show tooltips for them in addition.
-
-   - `QtTreePropertyBrowser` - fixed painting of the editor for color property type when style sheet is used (QTSOLBUG-64).
-   - Make it possible to change the style of the checkboxes with a stylesheet (QTSOLBUG-61).
-   - Change the minimum size of a combobox so that it can show at least one character and an icon.
-   - Make it possible to properly style custom embedded editors (e.g. the color editor provided with the solution).
+- `QtTreePropertyBrowser` - fixed painting of the editor for color property type when style sheet is used (QTSOLBUG-64).
+- Make it possible to change the style of the checkboxes with a stylesheet (QTSOLBUG-61).
+- Change the minimum size of a combobox so that it can show at least one character and an icon.
+- Make it possible to properly style custom embedded editors (e.g. the color editor provided with the solution).
 
 # Examples
 
@@ -97,3 +95,7 @@ The framework provides a browser widget that displays the given properties with 
 ## object_controller
 
 ![simple](doc/images/object_controller.png)
+
+# TODO
+
+- [ ] 支持序列化/反序列化JSON文件。
